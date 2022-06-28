@@ -5,7 +5,7 @@ authors = ["Parity Technologies <admin@parity.io>", "Subspace Labs <admin@subspa
 edition = "2021"
 license = "Apache-2.0"
 homepage = "https://koompi.com"
-repository = "https://github.com/kumandra/k-pallets"
+repository = "https://github.com/kumandra/kpallets"
 description = "Kumandra consensus pallet"
 readme = "README.md"
 
@@ -20,22 +20,22 @@ log = { version = "0.4.17", default-features = false }
 pallet-timestamp = { version = "4.0.0-dev", default-features = false, git = "https://github.com/kumandra/substrate", rev = "b49d8ee54f4bd6e4b5b48f45d08f75705fad95b4" }
 scale-info = { version = "2.1.1", default-features = false, features = ["derive"] }
 schnorrkel = { version = "0.9.1", default-features = false, features = ["u64_backend"] }
-kp-consensus = { version = "0.1.0", default-features = false, path = "../primitives/consensus" }
+kp-consensus = { version = "0.1.0", default-features = false, path = "../../kprimitives/consensus" }
 sp-consensus-slots = { version = "0.10.0-dev", default-features = false, git = "https://github.com/kumandra/substrate", rev = "b49d8ee54f4bd6e4b5b48f45d08f75705fad95b4" }
 sp-io = { version = "6.0.0", default-features = false, git = "https://github.com/kumandra/substrate", rev = "b49d8ee54f4bd6e4b5b48f45d08f75705fad95b4" }
 sp-runtime = { version = "6.0.0", default-features = false, git = "https://github.com/kumandra/substrate", rev = "b49d8ee54f4bd6e4b5b48f45d08f75705fad95b4" }
 sp-std = { version = "4.0.0-dev", default-features = false, git = "https://github.com/kumandra/substrate", rev = "b49d8ee54f4bd6e4b5b48f45d08f75705fad95b4" }
-kumandra-core-primitives = { version = "0.1.0", default-features = false, path = "../primitives/core" }
-kumandra-runtime-primitives = { version = "0.1.0", default-features = false, path = "../primitives/runtime" }
-kumandra-solving = { version = "0.1.0", default-features = false, path = "../krml/solving" }
+kumandra-core-primitives = { version = "0.1.0", default-features = false, path = "../../kprimitives/core" }
+kumandra-runtime-primitives = { version = "0.1.0", default-features = false, path = "../../kprimitives/runtime" }
+kumandra-solving = { version = "0.1.0", default-features = false, path = "../../krml/solving" }
 
 [dev-dependencies]
 env_logger = "0.9.0"
 pallet-balances = { version = "4.0.0-dev", git = "https://github.com/kumandra/substrate", rev = "b49d8ee54f4bd6e4b5b48f45d08f75705fad95b4" }
-pallet-offences-kumandra = { version = "0.1.0", path = "../k-pallets/offences-kumandra" }
+pallet-offences-kumandra = { version = "0.1.0", path = "../offences-kumandra" }
 rand = { version = "0.8.5", features = ["min_const_gen"] }
 sp-core = { version = "6.0.0", git = "https://github.com/kumandra/substrate", rev = "b49d8ee54f4bd6e4b5b48f45d08f75705fad95b4" }
-kumandra-archiving = { version = "0.1.0", path = "../krml/archiving" }
+kumandra-archiving = { version = "0.1.0", path = "../../krml/archiving" }
 
 [features]
 default = ["std"]

@@ -1,4 +1,4 @@
-# k-pallets
+# kpallets
 Kumandra Pallets
 
 This repository collets all Kumandra pallets. Currently it includes:
