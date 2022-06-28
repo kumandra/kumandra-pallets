@@ -47,13 +47,13 @@ std = [
 	"pallet-timestamp/std",
 	"scale-info/std",
 	"schnorrkel/std",
-	"sp-consensus-subspace/std",
+	"kp-consensus/std",
 	"sp-consensus-slots/std",
 	"sp-io/std",
 	"sp-runtime/std",
 	"sp-std/std",
-	"subspace-core-primitives/std",
-	"subspace-runtime-primitives/std",
-	"subspace-solving/std"
+	"kumandra-core-primitives/std",
+	"kumandra-runtime-primitives/std",
+	"kumandra-solving/std"
 ]
 try-runtime = ["frame-support/try-runtime"]
