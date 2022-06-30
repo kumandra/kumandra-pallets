@@ -1,5 +1,4 @@
 // Copyright (C) 2017-2021 Parity Technologies (UK) Ltd.
-// Copyright (C) 2021 Subspace Labs, Inc.
 // Copyright (C) 2022 KOOMPI.
 // SPDX-License-Identifier: Apache-2.0
 
@@ -21,7 +20,7 @@
 
 use crate::mock::{
     new_test_ext, offence_reports, report_id, with_on_offence_fractions, Event, Offence,
-    OffencesSubspace, System, KIND,
+    OffencesKumandra, System, KIND,
 };
 use codec::{Decode, Encode};
 use frame_system::{EventRecord, Phase};

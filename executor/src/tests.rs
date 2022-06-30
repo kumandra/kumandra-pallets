@@ -6,7 +6,7 @@ use frame_support::traits::{ConstU16, ConstU32, ConstU64, GenesisBuild, Hooks};
 use frame_support::{assert_noop, assert_ok, parameter_types};
 use sp_core::crypto::Pair;
 use sp_core::{H256, U256};
-use sp_executor::{
+use kp_executor::{
     ExecutionPhase, ExecutionReceipt, ExecutorPair, FraudProof, SignedExecutionReceipt,
 };
 use sp_runtime::testing::Header;

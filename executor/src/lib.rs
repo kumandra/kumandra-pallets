@@ -24,7 +24,7 @@ use frame_support::ensure;
 use frame_support::traits::Get;
 use frame_system::offchain::SubmitTransaction;
 pub use pallet::*;
-use sp_executor::{
+use kp_executor::{
     BundleEquivocationProof, FraudProof, InvalidTransactionProof, SignedExecutionReceipt,
     SignedOpaqueBundle,
 };
@@ -37,7 +37,7 @@ mod pallet {
     use frame_support::PalletError;
     use frame_system::pallet_prelude::*;
     use sp_core::H256;
-    use sp_executor::{
+    use kp_executor::{
         BundleEquivocationProof, ExecutionReceipt, ExecutorId, FraudProof, InvalidTransactionCode,
         InvalidTransactionProof, SignedExecutionReceipt, SignedOpaqueBundle,
     };
